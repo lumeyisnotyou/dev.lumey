@@ -51,6 +51,7 @@ anime.timeline({loop: false})
     duration: 2000,
     delay: (el, i) => 500 + 30 * i
   })
+
   if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
   anime.timeline({loop: false})
   .add({
