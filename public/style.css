@@ -5,6 +5,44 @@ background-color: rgb(20,20,20);
 display: flex;
 }
 
+.header {
+   position: fixed;
+   top: 25%;
+   right: 0;
+   left: 0;
+   font-family: 'Krona One', sans-serif;
+color: white;
+font-size: 80px;
+text-align: center;
+opacity: 0;
+
+}
+.othertext {
+   position: fixed;
+   top: 50%;
+   right: 0;
+   left: 0;
+   font-family: 'Roboto Mono', monospace;
+   font-weight: 400;
+color: white;
+font-size: 15px;
+text-align: center;
+opacity: 0;
+
+}
+.footer {
+   position: fixed;
+   top: 90%;
+   right: 0;
+   left: 0;
+   font-family: 'Roboto Mono', monospace;
+   font-weight: 100;
+color: white;
+font-size: 15px;
+text-align: center;
+opacity: 0;
+
+}
 .lumeytextdiv {
 margin: auto;
 width: 50%;

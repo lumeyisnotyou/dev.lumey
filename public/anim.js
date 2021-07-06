@@ -25,6 +25,24 @@ anime.timeline({loop: false})
     duration: 1200,
     delay: (el, i) => 500 + 30 * i
   }).add({
+
+     targets: '.header',
+    translateY: [40,0],
+    translateZ: 1,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+
+     targets: '.othertext',
+    translateY: [40,0],
+    translateZ: 1,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
    targets: '.menuitemlink',
     translateX: [40,0],
     translateZ: 1,
@@ -33,4 +51,27 @@ anime.timeline({loop: false})
     duration: 2000,
     delay: (el, i) => 500 + 30 * i
   })
+  if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+  anime.timeline({loop: false})
+  .add({
 
+     targets: '.footer',
+    translateY: [40,0],
+    translateZ: 1,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  })
+    .add({
+
+     targets: '.footer',
+    translateY: [0,40],
+    translateZ: 1,
+    opacity: [1,0],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  })
+
+  }
