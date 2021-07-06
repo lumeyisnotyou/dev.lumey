@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 body {
-background-color: rgb(123,123,123);
+background-color: rgb(20,20,20);
+display: flex;
+}
+
+.lumeytextdiv {
+margin: auto;
+width: 50%;
+position: relative;
+padding: 10px;
+border: 5px solid white;
+display: block;
+}
+.lumeytext .letter {
+  display: inline-block;
+  line-height: 1em;
+
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  50% {opacity: 0;}
+  100% {opacity:1;}
+}
+.lumeytext {
+font-family: 'Krona One', sans-serif;
+color: white;
+font-size: 100px;
+text-align: center;
 }
