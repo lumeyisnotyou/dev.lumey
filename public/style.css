@@ -69,7 +69,7 @@ font-size: 100px;
 text-align: center;
 }
 .menu {
-position: absolute;
+position: fixed;
 width: 1200px;
 height: 50px;
 right: 0;
