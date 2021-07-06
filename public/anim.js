@@ -2,6 +2,7 @@
 var textWrapper = document.querySelector('.lumeytext');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
+
 anime.timeline({loop: false})
   .add({
     targets: '.lumeytext .letter',
@@ -9,7 +10,7 @@ anime.timeline({loop: false})
     translateY: [30,0],
     translateZ: 1,
     opacity: [0,1],
-    color: ['rgb(255,255,255)','rgb(194, 235, 255)'],
+    color: ['rgb(255,255,255)','rgb(255,255,255)','rgb(194, 235, 255)'],
     easing: "easeOutExpo",
     duration: 1200,
     delay: (el, i) => 500 + 30 * i
@@ -22,6 +23,14 @@ anime.timeline({loop: false})
     translateZ: 1,
     easing: "easeOutExpo",
     duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+   targets: '.menuitemlink',
+    translateX: [40,0],
+    translateZ: 1,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 2000,
     delay: (el, i) => 500 + 30 * i
   })
 
