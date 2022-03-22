@@ -1,26 +1,40 @@
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.lumeytext');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+}
+ var myElements = document.getElementsByClassName("letter");
+  for(var i = 0; i < myElements.length; i++){
+  var randomIntA = getRandomInt(-500,500);
+  var randomIntB = getRandomInt(-500,500);
 
 
-anime.timeline({loop: false})
+  anime.timeline({loop: false})
   .add({
-    targets: '.lumeytext .letter',
-    translateX: [40,0],
-    translateY: [30,0],
+    targets: myElements[i],
+    translateX: [randomIntA,randomIntA,0],
+    translateY: [randomIntB,randomIntB,0],
+    scale: [2,2,1],
     translateZ: 1,
     opacity: [0,1],
-    color: ['rgb(255,255,255)','rgb(255,255,255)','rgb(194, 235, 255)'],
     easing: "easeOutExpo",
-    duration: 1200,
-    delay: (el, i) => 500 + 30 * i
-  }).add({
+    duration: 3000,
+    delay: (el, i) => 500 + 300 * i
+  })
+  }
+setTimeout(() => {
+ anime.timeline({loop: false})
+ .add({
   targets: '.lumeytextdiv',
-    right: '40%',
-    top: '-40%',
-    scaleX: [1, 0.3],
-    scaleY: [1, 0.3],
-    translateZ: 1,
+    right: '37%',
+    top: '45%',
+    scaleX: [1, 2],
+    scaleY: [1, 2],
+    opacity: [1,0.25],
+    translateZ: 0.5,
     easing: "easeOutExpo",
     duration: 1200,
     delay: (el, i) => 500 + 30 * i
@@ -50,6 +64,24 @@ anime.timeline({loop: false})
     easing: "easeOutExpo",
     duration: 2000,
     delay: (el, i) => 500 + 30 * i
+  }).add({
+
+     targets: '.header2',
+    translateY: [40,0],
+    translateZ: 1,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+
+     targets: '.othertext2',
+    translateY: [40,0],
+    translateZ: 1,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
   })
 
   if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
@@ -76,12 +108,5 @@ anime.timeline({loop: false})
   })
 
   }
+ }, 2000);
 
-  anime.timeline({loop: false})
-  .add({
-targets: '.canvas',
-opacity: [0,1],
-easing: "easeOutExpo",
-duration: 1200,
-delay: 3600,
-})
