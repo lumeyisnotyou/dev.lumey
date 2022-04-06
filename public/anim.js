@@ -76,12 +76,3 @@ anime.timeline({loop: false})
   })
 
   }
-
-  anime.timeline({loop: false})
-  .add({
-targets: '.canvas',
-opacity: [0,1],
-easing: "easeOutExpo",
-duration: 1200,
-delay: 3600,
-})

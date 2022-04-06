@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
     anime.timeline({ loop: false })
         .add({
             targets: renderer.domElement,
-            opacity: [0, 0.7],
+            opacity: [0, 1],
             easing: "linear",
             duration: 4000,
             delay: 3600,
