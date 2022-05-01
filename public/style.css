@@ -70,11 +70,11 @@ text-align: center;
 }
 .menu {
 position: fixed;
-width: 1200px;
+width: 50%;
 height: 50px;
 right: 0;
 top: 9%;
-
+flex-wrap: wrap;
 display: block;
 text-align: center;
 vertical-align: middle;
