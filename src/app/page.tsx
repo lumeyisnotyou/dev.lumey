@@ -84,12 +84,12 @@ export default function Home() {
 
         </div>
         <span id='listSpan' className='text-2xl z-10 opacity-0 p-2 pl-10 max-w-4xl w-fit h-fit motion-safe:duration-1000 motion-safe:transition-all font-bold'>
-          Hi there, I&apos;m a high-school student who loves to tinker with everything. I'm a homelabber, a developer, and a designer.
+          Hi there, I&apos;m a high-school student who loves to tinker with everything. I&apos;m a homelabber, a developer, and a designer.
           <ul className=' list-dash text-xl space-y-2 p-2 list-inside'>
             <li className='list-item motion-safe:translate-x-16 motion-safe:duration-1000 motion-safe:opacity-0 motion-safe:transition-all'>👨‍💻 I know React, Node, Swift, and some Python</li>
             <li className='list-item motion-safe:translate-x-16 motion-safe:duration-1000 motion-safe:opacity-0 motion-safe:transition-all'>📱 I have a huge knack for design and UI/UX</li>
             <li className='list-item motion-safe:translate-x-16 motion-safe:duration-1000 motion-safe:opacity-0 motion-safe:transition-all'>🏠 I run a homelab with a single server and networking setup</li>
-            <li className='list-item motion-safe:translate-x-16 motion-safe:duration-1000 motion-safe:opacity-0 motion-safe:transition-all'>🎮 I play a lot of VRChat, and I'm a furry</li>
+            <li className='list-item motion-safe:translate-x-16 motion-safe:duration-1000 motion-safe:opacity-0 motion-safe:transition-all'>🎮 I play a lot of VRChat, and I&apos;m a furry</li>
           </ul>
         </span>
         <div className='flex flex-row w-screen justify-between space-x-2'>
