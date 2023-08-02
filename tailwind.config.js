@@ -6,6 +6,7 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    extend: {
     listStyleType: {
       // Dash
       dash: 'square',
@@ -16,7 +17,7 @@ module.exports = {
     fontFamily: {
       sans: ['DM Sans', 'sans-serif'],
       mono: ['Major Mono Display', 'monospace'],
-    },
+    }, }
   },
   plugins: [
   ],
