@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --accent-hex: #bcdceb;
+
+  }
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.text-stroke {
+  -webkit-text-stroke: 3px rgb(var(--foreground-rgb));
+  -webkit-text-fill-color: transparent;
+}
+
+.text-normal {
+  -webkit-text-stroke: 3px rgb(var(--foreground-rgb));
+  -webkit-text-fill-color: var(--accent-hex)
+}
