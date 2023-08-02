@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='motion-safe:transition-all'>{children}</body>
+      <body className='motion-safe:transition-all overflow-hidden'>{children}</body>
     </html>
   )
 }
